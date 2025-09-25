@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prisma:generate": "prisma db push && prisma generate"
+  },
   "dependencies": {
     "@prisma/client": "^6.12.0",
     "bun": "^1.2.19",
@@ -7,9 +14,18 @@
     "zod": "^4.0.5"
   },
   "devDependencies": {
-    "prisma": "^6.12.0"
-  },
-  "scripts": {
-    "prisma:generate": "prisma db push && prisma generate"
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.2.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-packagejson": "^2.5.19",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prisma": "^6.12.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1"
   }
 }
